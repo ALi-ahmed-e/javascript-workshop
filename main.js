@@ -17,10 +17,11 @@
 // (0)DOM 
 
 
-// const test = document.getElementById('test') // 1
+// const ahmed = document.getElementById("test") // 1
+
 // const test2 = document.getElementsByClassName('test') //[]
-//const test3 = document.querySelector('.test') // [0]
-//const test4 = document.querySelectorAll('.test') // [0,1,2]
+// const test3 = document.querySelector('.test') // [0]
+// const test4 = document.querySelectorAll('.test') // [0,1,2]
 
 
 // console.log(test)
@@ -28,7 +29,7 @@
 // console.log(test3)
 // console.log(test4)
 
-// test.style.backgroundColor = "red"
+// ahmed.style.backgroundColor = "red"
 
 // test.onclick = function() {
 //     console.log('clicked')
@@ -45,21 +46,21 @@
 
 
 
-// var x = 32
-
+// var x = false
 
 // const y = 6;
 
 // let z = 7;
 
 
-// console.log(first)
+// console.log()
 // (2)console
+
 
 
 // console.log(x)
 // console.error(y)
-// console.warn(z)
+// console.warn(x)
 
 
 
@@ -79,7 +80,7 @@
 // const b = undefined  //undefined
 // let c; //undefined
 
-// const d = [1,'2',true,4,5] 
+// const d = [1,'2',true,4,5];
 
 
 
@@ -92,14 +93,17 @@
 
 // const f = new Date() 
 
-
+// console.log(typeof(f))
 
 // const g = Symbol()
+
+// console.log(typeof(g))
 
 
 // const h = function(){
 //     return 'hello'
 // }
+// console.log(typeof(h))
 
 
 
@@ -121,19 +125,32 @@
 //for loop
 
 // for(let i = 0; i < 10; i++){
+
 //     console.log(i)
 
 // }
 
+// const testArray = ['apple', 'banana', 'orange', 'grape', 'kiwi', 'mango', 'peach', 'pear', 'pineapple', 'strawberry'];
+
+// for(let i = 0; i < testArray.length; i++){
+//     console.log("your fruit is "+testArray[i]);
+
+// }
+
+
 // while loop
 
-// let i = 20
+// let i = 0
 
 // while(i >= 10){
 //     console.log('while',i)
 //     i--
 // }
 
+// while(i<30){
+// console.log(i)
+// i++
+// }
 
 //(5)if else
 
@@ -142,17 +159,21 @@
 //|| //or
 //&& //and
 
-// const x = '5'
+
+// const x = 10
 
 // const y = 4
 
-// if(x == 5 && y == 10){
-// console.log('x is 5')
-// }else{
-// console.log('x is not 5')
-//}
 
-// condition ? code : else
+// if (x+y >20) {
+//     console.log("hello")
+// }else if(x+y>10){
+//     console.log("world 2")
+// }
+    // if(condition){code}else{code}
+    // condition ? code : else
+
+// 5>10?console.log("first"):6>3?console.log("second"):console.log("third")
 
 // x === 5?console.log('x is 5'):console.log('x is not 5')
 
@@ -163,6 +184,30 @@
 //     return num1 + num2
 // }
 
+
+
+
+// function testFunction(x,y){
+//     console.log("first",x)
+//     console.log("second",y)
+// }
+
+// testFunction(5,6)
+
+
+// let testFunction = function(){
+//     console.log("test")
+// }
+
+// alert("test")
+
+// const testArrowFunc =()=>{
+//     console.log("test arrow function")
+// }
+
+// testArrowFunc(  )
+
+
 // function testFunction(name){
 //     console.log(`hello ${name}`)
 // }
@@ -172,7 +217,7 @@
 
 // console.log(addNums(5,5))
 
-//arrow function
+// arrow function
 
 // const testFunction = (name)=>{
 //     console.log(`hello ${name}`)
@@ -185,6 +230,28 @@
 // console.log(addNums(5,5))
 
 // *arrow fuction vs regular function
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////// session 2 ////////
+
+
+
+
+
+
+
+
 
 
 
