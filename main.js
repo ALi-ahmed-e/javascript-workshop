@@ -170,8 +170,8 @@
 // }else if(x+y>10){
 //     console.log("world 2")
 // }
-    // if(condition){code}else{code}
-    // condition ? code : else
+// if(condition){code}else{code}
+// condition ? code : else
 
 // 5>10?console.log("first"):6>3?console.log("second"):console.log("third")
 
@@ -270,6 +270,44 @@
 
 
 
+// let user = {
+//     name:"ali",
+//     age:'50',
+//     city:"cairo",
+//     getName:function(){
+//         return "MY name is " + this.name
+//     }
+// }
+
+// console.log(user)
+
+// user.name = "mohamed"
+
+
+// console.log(user)
+
+
+// user.phone = "01214654646"
+
+// console.log(user)
+
+
+// delete user.age
+
+// console.log(user)
+
+
+// console.log(user.getName)
+
+
+// const name = user.name
+
+// const age = user.age
+
+// const {name,age,phone} = user
+
+// console.log(name,age,phone)
+
 // console.log(car.name)
 
 
@@ -306,16 +344,51 @@
 // (8)array
 
 
-// const fruits = ['apple', 'banana', 'orange']
+// const fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi', 'mango', 'peach', 'pear', 'pineapple', 'strawberry'];
+
+
+
+// const filtered = ()=>{
+
+//     const testArr = []
+
+//     for(let i = 0; i < fruits.length; i++) {
+
+
+//           fruits[i].length <= 5 ?testArr.push(fruits[i]) :''
+
+//     }
+
+//     return testArr
+
+// }
+
+// console.log(filtered())
+
+
+// fruits.map((element,i)=>{
+// console.log(element,i)
+// })
+
+// let testArr = [1,3,5,"hello",true]
+
+// console.log(fruits[fruits.length-1])
 
 // console.log(fruits[fruits.length])
 
-// fruits.push('mango') //add to end
+// fruits.push('test') //add to end
 // console.log(fruits)
 
-// fruits.splice(2,1) //remove last element
+// fruits.pop()
+
 // console.log(fruits)
 
+
+// fruits.splice(2,2,"test1","test2") //remove last element
+// console.log(fruits)
+
+// fruits[2] = "test"
+// console.log(fruits)
 
 // fruits.pop() //remove last element
 
@@ -331,7 +404,8 @@
 
 //destructuring
 
-// const [fruit1, fruit2] = fruits
+// const [fruit1, fruit2,el2,el,el5] = fruits
+// console.log(el5)
 
 // console.log(fruit1, fruit2)
 
@@ -419,8 +493,22 @@
 
 
 //(10) local storage and session storage
+// const test = {
+//     name:"ali",
+//     age:30,
+// }
 
-// localStorage.setItem("add",JSON.stringify({add1:"cairo"}))
+// localStorage.setItem("user",JSON.stringify(test))
+
+
+
+
+// console.log(JSON.parse(localStorage.getItem("user")))
+
+
+
+
+
 
 // // console.log(JSON.parse(localStorage.getItem("add")))
 
@@ -428,9 +516,14 @@
 
 // localStorage.removeItem("add")
 
+// localStorage.clear()
 // console.log(localStorage)
 
 
+
+
+// sessionStorage.setItem("user", JSON.stringify(test))
+// console.log(JSON.parse(sessionStorage.getItem("user")))
 
 // console.log(JSON.stringify({age:30}))
 // console.log({age:30})
@@ -544,7 +637,7 @@
 
 //     // console.log(returnedUserIndex)
 //     users.splice(returnedUserIndex,1)
-    
+
 
 // }
 
@@ -558,6 +651,20 @@
 
 
 
+
+
+const input = document.getElementById("inp")
+const button = document.getElementById("test")
+
+
+
+
+
+button.addEventListener("click", () => {
+    console.log(input.value)
+
+    localStorage.setItem("inputValue", input.value)
+})
 
 
 
